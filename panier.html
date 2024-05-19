@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Achat</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylepanier.css">
+
+    </head>
+
+    <body>
+        <div class="contenu">
+            <h2 class="text-centre">Panier d'achat</h2>
+            <div class="milieu">
+                <div class="colonne">
+                    <div class="table-effet">
+                        <table id="maTable" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produit</th>
+                                    <th>Nom</th>
+                                    <th>Quantité</th>
+                                    <th>Prix</th>
+                                    <th class="texte-a-droite">
+                                        <span id="montant" class="montant">Montant</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="the-vert.png" alt="" class="img-prod">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Produit 1</p>
+                                    </td>
+                                    <td>
+                                        <div class="contenu-boutton">
+                                            <button class="quant-panier-plus" type="button" value="+">+</button>
+                                            <input type="text" name="quantité" min="0" class="controle-form" value="0">
+                                            <button class="quant-panier-moins" type="button" value="-">-</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="5.000" class="controle form-prix" disabled>
+                                    </td>
+                                    <td align="right">Fcfa <span id="montant" class="montant">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="sachet-de-the.png" alt="" class="img-prod">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Produit 2</p>
+                                    </td>
+                                    <td>
+                                        <div class="contenu-boutton">
+                                            <button class="quant-panier-plus" type="button" value="+">+</button>
+                                            <input type="text" name="quantité" min="0" class="controle-form" value="0">
+                                            <button class="quant-panier-moins" type="button" value="-">-</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="7.000" class="controle form-prix" disabled>
+                                    </td>
+                                    <td align="right">Fcfa <span id="montant" class="montant">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="montre-bracelet.png" alt="" class="img-prod">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Produit 3</p>
+                                    </td>
+                                    <td>
+                                        <div class="contenu-boutton">
+                                            <button class="quant-panier-plus" type="button" value="+">+</button>
+                                            <input type="text" name="quantité" min="0" class="controle-form" value="0">
+                                            <button class="quant-panier-moins" type="button" value="-">-</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="25.000" class="controle form-prix" disabled>
+                                    </td>
+                                    <td align="right">Fcfa <span id="montant" class="montant">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="application-montre-connectee.png" alt="" class="img-prod">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Produit 4</p>
+                                    </td>
+                                    <td>
+                                        <div class="contenu-boutton">
+                                            <button class="quant-panier-plus" type="button" value="+">+</button>
+                                            <input type="text" name="quantité" min="0" class="controle-form" value="0">
+                                            <button class="quant-panier-moins" type="button" value="-">-</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="30.000" class="controle form-prix" disabled>
+                                    </td>
+                                    <td align="right">Fcfa <span id="montant" class="montant">0</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"></td>
+                                    <td align="right">
+                                        <strong>Total = Fcfa <span id="total" class="total">0</span>
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="./scriptdom.js"></script>
+        
+    </body>
+    
+</html>
